@@ -1,14 +1,15 @@
 import sys
 import math
-from random import random, randint
 import numpy as np
+from numpy.random import random, randint
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # initialise constants
-J, T, k_B = 1.0, 1.0, 10.0
+J, k_B = 1.0, 1.0
 nstep = int(1e4)
 
+T = float(input("Temperature of the system: "))
 lx = int(input("Length of the lattice's side: "))
 ly = lx
 
@@ -31,14 +32,14 @@ def get_prob_of_flipping(E: int):
     return np.exp(2*E / (k_B*T))
 
 def try_change_spin():
-    itrial = randint(0,lx-1)
-    jtrial = randint(0,ly-1)
+    itrial = randint(0,lx)
+    jtrial = randint(0,ly)
     E = get_energy_of_spin(itrial, jtrial, spin_array)
     # flag corresponding to metropolis test: change spin if it
     # lowers the energy (ΔE < 0) or with prob exp(ΔE / (k_b)T)
-    print(E, get_prob_of_flipping(E))
-    flipping_flag = random() <= get_prob_of_flipping(E) 
-    if E >= 0 or flipping_flag :
+    # print(E, get_prob_of_flipping(E))
+    metropolis_flag = random() <= get_prob_of_flipping(E) 
+    if E >= 0 or metropolis_flag :
         spin_array[itrial, jtrial] *= -1
 
 def glauber():
@@ -64,6 +65,7 @@ def glauber():
             plt.pause(0.0001)
 
 def kawasaki():
+    """Implementation of Kawasaki dynamics"""
     pass
 
 glauber()
