@@ -11,7 +11,7 @@ but I used |M| instead so the results are a bit different.
 ## Files
 <ul>
   <li> <a href="IsingModelDocument.pdf">IsingModelDocument.pdf</a> --> This pdf file contains the description followed to complete the project.
-  <li> <a href"https://github.com/Paramiru/Ising-Model/tree/main/src">src</a> --> This directory contains the whole project.
+  <li> <a href="./src">src</a> --> This directory contains the whole project.
   <li> <a href="test/test_plots.ipynb">test_plots.ipynb</a> --> Jupyter Notebook to show the plots of the observables computed in the simulations (and stored in <em>output_files</em>).
 </ul>
 
