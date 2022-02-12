@@ -5,8 +5,8 @@
 <br><b>Objective:</b> Model the state of the ising model for a 2D square lattice of length l with l<sup>2</sup> spins.
 Program a drone so that it can read information from several sensors and come back to the starting location.
 <br><b>Programming Language:</b> Python3
-<br><b>Final Mark:</b> 14/15 - made a small mistake computing the susceptibility. It is defined as ...
-but I used |M| instead so the results are a bit different.
+<br><b>Final Mark:</b> 14/15 - made a small mistake computing the susceptibility. It is defined as ![equation](/others/susceptibility.png)
+but I used the absolute value of the magnetisation instead, so the results are a bit different.
 
 ## Files
 <ul>
