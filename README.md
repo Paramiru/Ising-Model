@@ -62,7 +62,7 @@ If you want to get the data from the simulations, you should modify the code in 
 * [Python3](https://www.python.org/downloads/)
 * [Conda](https://docs.conda.io/en/latest/) - Dependency Management
 
-## Maven Dependencies
+## Python Dependencies
 
 * [Numpy](https://numpy.org/doc/stable/index.html)
 * [Matplotlib](https://matplotlib.org/stable/)
