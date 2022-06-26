@@ -5,6 +5,7 @@
 <br><b>Objective:</b> Model the state of the ising model for a 2D square lattice of length l with l<sup>2</sup> spins.
 <br><b>Programming Language:</b> Python3
 <br><b>Final Mark:</b> 14/15 - made a small mistake computing the susceptibility. It is defined as ![equation](/others/susceptibility.png)
+
 but I used the absolute value of the magnetisation instead, so the results are a bit different.
 
 ## Files
@@ -14,7 +15,7 @@ but I used the absolute value of the magnetisation instead, so the results are a
   <li> <a href="test/test_plots.ipynb">test_plots.ipynb</a> --> Jupyter Notebook to show the plots of the observables computed in the simulations (and stored in <em>output_files</em>).
 </ul>
 
-## Brief description of the ising model
+## Brief description of the Ising model
 The purpose of this project is to learn how to use Monte Carlo Markov Chain methods. I am implementing the <em>metropolis algorithm</em> in conjunction with Glauber Dynamics or Kawasaki Dynamics to model the evolution of the ising model at a given temperature T.
 
 The Ising Model in the project consists of a square lattice whose elements correspond to atomic spins. They can be in one of two states (+1 or -1), representing their magnetic dipole moment; and they can only interact with their neighbours.
